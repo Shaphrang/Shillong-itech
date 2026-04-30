@@ -1,0 +1,2 @@
+import { site } from '@/data/site';
+export function StickyCTA(){return <div className="fixed bottom-0 left-0 right-0 z-50 border-t bg-white p-3 md:hidden"><div className="mx-auto grid max-w-md grid-cols-2 gap-2"><a href={`tel:${site.phone}`} className="rounded-full bg-forest px-4 py-2 text-center text-white">Call Now</a><a href={`https://wa.me/${site.whatsapp.replace(/\D/g,'')}`} className="rounded-full bg-accent px-4 py-2 text-center text-white">WhatsApp</a></div></div>}

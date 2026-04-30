@@ -1,0 +1,3 @@
+import Link from 'next/link';
+const nav=[['About','/about'],['Services','/services'],['Projects','/projects'],['Contact','/contact']];
+export function Header(){return <header className="sticky top-0 z-40 border-b bg-cream/95 backdrop-blur"><div className="container-ui flex h-16 items-center justify-between"><Link href="/" className="font-semibold text-forest">Shillong ITech</Link><nav className="hidden gap-5 md:flex">{nav.map(([l,h])=><Link key={h} href={h} className="text-sm hover:text-forest">{l}</Link>)}</nav><Link href="/contact" className="rounded-full bg-forest px-4 py-2 text-sm text-white">Start a Project</Link></div></header>}
