@@ -1,4 +1,5 @@
-//src\data\services.ts
+//src/data/services.ts
+
 export type Service = {
   slug: string;
   title: string;
@@ -8,98 +9,90 @@ export type Service = {
 
 export const services: Service[] = [
   {
-    slug: 'website-development-shillong',
-    title: 'Website Development',
+    slug: 'business-websites',
+    title: 'Business Websites',
     summary:
-      'Fast, mobile-first business websites built to convert visitors into leads.',
+      'Modern websites for local businesses.',
     bullets: [
-      'Responsive pages',
-      'Contact and WhatsApp CTAs',
-      'SEO-ready structure',
+      'Resorts & homestays',
+      'Restaurants & cafes',
     ],
   },
 
   {
-    slug: 'mobile-app-development-shillong',
-    title: 'Mobile App Development',
-    summary:
-      'Practical Android/iOS apps for operations, customers, and field teams.',
-    bullets: [
-      'Flutter/React Native',
-      'Offline-first flows',
-      'API integration',
-    ],
-  },
-
-  {
-    slug: 'software-development-shillong',
-    title: 'Custom Software Development',
-    summary:
-      'Business systems designed around your exact workflows and data.',
-    bullets: [
-      'Role-based modules',
-      'Reports and exports',
-      'Clean maintainable code',
-    ],
-  },
-
-  {
-    slug: 'admin-dashboard-development',
-    title: 'Admin Dashboards',
-    summary:
-      'Control panels for teams, approvals, analytics, and day-to-day management.',
-    bullets: [
-      'Charts and reports',
-      'User permissions',
-      'Workflow automation',
-    ],
-  },
-
-  {
-    slug: 'booking-system-development',
+    slug: 'booking-systems',
     title: 'Booking Systems',
     summary:
-      'Booking engines for resorts, services, and appointments with real-time status.',
+      'Online booking and customer management.',
     bullets: [
-      'Availability workflows',
-      'Payment-ready architecture',
-      'Automated confirmations',
+      'Room bookings',
+      'Appointments & services',
     ],
   },
 
   {
-    slug: 'business-automation',
-    title: 'Business Automation',
+    slug: 'mobile-apps',
+    title: 'Mobile Apps',
     summary:
-      'Remove manual steps with smart forms, triggers, and integrated systems.',
+      'Apps for customers and business operations.',
     bullets: [
-      'Process mapping',
-      'Automation rules',
-      'Efficiency improvements',
+      'Android & iPhone apps',
+      'Booking & management apps',
     ],
   },
 
   {
-    slug: 'digital-marketing-shillong',
-    title: 'Digital Marketing & Online Visibility',
+    slug: 'admin-dashboards',
+    title: 'Admin Dashboards',
     summary:
-      'Improve discoverability and local lead generation with practical digital strategy.',
+      'Manage bookings, customers, and reports.',
     bullets: [
-      'Local SEO basics',
-      'Content planning',
-      'Campaign support',
+      'Business management',
+      'Reports & analytics',
     ],
   },
 
   {
-    slug: 'google-business-profile-setup',
-    title: 'Google Business Profile Setup',
+    slug: 'crm-software',
+    title: 'CRM Software',
     summary:
-      'Setup and optimize your profile so customers can discover and contact you quickly.',
+      'Custom systems for managing your business.',
     bullets: [
-      'Profile setup',
-      'Category optimization',
-      'Photo and post guidance',
+      'Customer management',
+      'Staff & workflow management',
+    ],
+  },
+
+  {
+    slug: 'google-business',
+    title: 'Google Business Setup',
+    summary:
+      'Get your business visible on Google.',
+    bullets: [
+      'Google Maps setup',
+      'Business profile optimization',
+    ],
+  },
+
+  {
+    slug: 'digital-marketing',
+    title: 'Digital Marketing',
+    summary:
+      'Help customers discover your business online.',
+    bullets: [
+      'Local SEO',
+      'Online visibility',
+    ],
+  },
+
+  {
+    slug: 'small-business-solutions',
+    title: 'Small Business Solutions',
+    summary:
+      'Simple digital solutions for growing businesses.',
+    bullets: [
+      'Clothing brands',
+      'Shops, spas & tourism',
     ],
   },
 ];

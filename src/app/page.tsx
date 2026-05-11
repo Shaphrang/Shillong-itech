@@ -77,16 +77,16 @@ export default function Home() {
                     <h1 className="text-[2.4rem] font-bold leading-[0.95] tracking-[-0.04em] text-white sm:text-[3.5rem]">
                       Websites.
                       <br />
-                      Apps.
+                      Booking Systems.
                       <br />
-                      AI Systems.
+                      Dashboard.
                     </h1>
 
-                    <p className="mt-5 max-w-md text-sm leading-7 text-zinc-400">
-                      Modern digital products designed
-                      for businesses, startups, and
-                      organizations.
-                    </p>
+                  <p className="mt-5 max-w-md text-sm leading-7 text-zinc-400">
+                    We create websites, apps, booking systems, and admin
+                    dashboards for homestays, resorts, restaurants, cafes,
+                    spas, tourism, and growing businesses.
+                  </p>
                   </div>
 
                   {/* ACTIONS */}
@@ -375,161 +375,141 @@ export default function Home() {
 
           {/* PROJECTS */}
 
-<section
-  id="projects"
-  className="mt-6"
->
-  {/* TOP */}
-
-  <div className="mb-4 flex items-center justify-between">
-    <div>
-      <p className="text-[10px] uppercase tracking-[0.18em] text-zinc-500">
-        Projects
-      </p>
-
-      <h2 className="mt-1 text-base font-semibold text-white">
-        Recent Work
-      </h2>
-    </div>
-
-    <p className="text-[10px] uppercase tracking-[0.15em] text-orange-200">
-      Swipe →
-    </p>
-  </div>
-
-  {/* FEATURED APP CARD */}
-
-  <article className="group relative overflow-hidden rounded-[1.7rem] border border-orange-500/10 bg-[#181c20]">
-    {/* BG */}
-
-    <div className="absolute inset-0 bg-gradient-to-br from-orange-500/[0.05] via-transparent to-red-500/[0.03]" />
-
-    {/* IMAGE */}
-
-    <div className="relative h-[190px] overflow-hidden">
-      <img
-        src="https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=1400&auto=format&fit=crop"
-        alt={projects[0].name}
-        className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
-      />
-
-      {/* OVERLAY */}
-
-      <div className="absolute inset-0 bg-gradient-to-t from-[#181c20] via-black/10 to-transparent" />
-
-      {/* STATUS */}
-
-      <div className="absolute left-3 top-3 rounded-full border border-orange-500/10 bg-black/30 px-3 py-1.5 text-[9px] uppercase tracking-[0.15em] text-orange-100 backdrop-blur">
-        Featured
-      </div>
-
-      {/* CONTENT */}
-
-      <div className="absolute bottom-0 left-0 right-0 p-4">
-        <h3 className="text-base font-semibold text-white">
-          {projects[0].name}
-        </h3>
-
-        <p className="mt-2 max-w-md text-[11px] leading-5 text-zinc-300">
-          {projects[0].description}
-        </p>
-      </div>
-    </div>
-
-    {/* FOOTER */}
-
-    <div className="flex gap-2 overflow-x-auto border-t border-white/5 p-3 no-scrollbar">
-      {projects[0].tech
-        .split(',')
-        .slice(0, 3)
-        .map((item) => (
-          <div
-            key={item}
-            className="whitespace-nowrap rounded-full border border-orange-500/10 bg-orange-500/[0.05] px-2.5 py-1 text-[9px] uppercase tracking-[0.12em] text-orange-100"
+          <section
+            id="projects"
+            className="mt-6"
           >
-            {item.trim()}
-          </div>
-        ))}
-    </div>
-  </article>
+            {/* TOP */}
 
-  {/* MINI SLIDER */}
+            <div className="mb-4 flex items-center justify-between">
+              <div>
+                <p className="text-[10px] uppercase tracking-[0.18em] text-zinc-500">
+                  Projects
+                </p>
 
-  {/* MINI PROJECT LIST */}
+                <h2 className="mt-1 text-base font-semibold text-white">
+                  Recent Work
+                </h2>
+              </div>
 
-<div className="mt-3 space-y-2.5">
-  {projects.slice(1).map((project, index) => (
-    <article
-      key={project.slug}
-      className="group relative overflow-hidden border border-orange-400/10 bg-[#23262b]"
-    >
-      {/* LIGHT GRADIENT BORDER */}
-
-      <div className="absolute inset-0 bg-gradient-to-r from-orange-400/[0.08] via-yellow-300/[0.04] to-red-400/[0.06]" />
-
-      {/* CONTENT */}
-
-      <div className="relative flex items-center gap-3 p-2.5">
-        {/* IMAGE */}
-
-        <div className="relative h-[68px] w-[68px] shrink-0 overflow-hidden border border-orange-300/10">
-          <img
-            src={
-              index === 0
-                ? 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop'
-                : index === 1
-                ? 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop'
-                : 'https://images.unsplash.com/photo-1522542550221-31fd19575a2d?q=80&w=1200&auto=format&fit=crop'
-            }
-            alt={project.name}
-            className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
-          />
-
-          <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-        </div>
-
-        {/* INFO */}
-
-        <div className="min-w-0 flex-1">
-          {/* TOP */}
-
-          <div className="flex items-start justify-between gap-2">
-            <div className="min-w-0">
-              <h3 className="line-clamp-1 text-[13px] font-semibold text-white">
-                {project.name}
-              </h3>
-
-              <p className="mt-1 line-clamp-1 text-[10px] text-zinc-400">
-                {project.outcome}
+              <p className="text-[10px] uppercase tracking-[0.15em] text-orange-200">
+                Swipe →
               </p>
             </div>
 
-            <div className="flex h-7 w-7 shrink-0 items-center justify-center border border-orange-300/10 bg-orange-400/[0.05] text-[11px] text-orange-100 transition duration-300 group-hover:translate-x-0.5">
-              ↗
-            </div>
-          </div>
+            {/* FEATURED APP CARD */}
 
-          {/* TECH */}
+            <article className="group relative overflow-hidden rounded-[1.7rem] border border-orange-500/10 bg-[#181c20]">
+              {/* BG */}
 
-          <div className="mt-2 flex flex-wrap gap-1">
-            {project.tech
-              .split(',')
-              .slice(0, 2)
-              .map((item) => (
-                <span
-                  key={item}
-                  className="border border-orange-300/10 bg-orange-400/[0.04] px-1.5 py-1 text-[8px] uppercase tracking-[0.12em] text-orange-100"
-                >
-                  {item.trim()}
-                </span>
-              ))}
-          </div>
-        </div>
-      </div>
-    </article>
-  ))}
+              <div className="absolute inset-0 bg-gradient-to-br from-orange-500/[0.05] via-transparent to-red-500/[0.03]" />
+
+              {/* IMAGE */}
+
+              {/* IMAGE */}
+
+<div className="relative overflow-hidden">
+  <img
+    src={projects[0].image}
+    alt={projects[0].name}
+    className="w-full object-contain transition duration-700 group-hover:scale-[1.02]"
+  />
 </div>
-</section>
+
+              {/* FOOTER */}
+
+              <div className="flex gap-2 overflow-x-auto border-t border-white/5 p-3 no-scrollbar">
+                {projects[0].tech
+                  .split(',')
+                  .slice(0, 3)
+                  .map((item) => (
+                    <div
+                      key={item}
+                      className="whitespace-nowrap rounded-full border border-orange-500/10 bg-orange-500/[0.05] px-2.5 py-1 text-[9px] uppercase tracking-[0.12em] text-orange-100"
+                    >
+                      {item.trim()}
+                    </div>
+                  ))}
+              </div>
+            </article>
+
+            {/* MINI SLIDER */}
+
+            {/* MINI PROJECT LIST */}
+
+          <div className="mt-3 space-y-2.5">
+            {projects.slice(1).map((project, index) => (
+              <article
+                key={project.slug}
+                className="group relative overflow-hidden border border-orange-400/10 bg-[#23262b]"
+              >
+                {/* LIGHT GRADIENT BORDER */}
+
+                <div className="absolute inset-0 bg-gradient-to-r from-orange-400/[0.08] via-yellow-300/[0.04] to-red-400/[0.06]" />
+
+                {/* CONTENT */}
+
+                <div className="relative flex items-center gap-3 p-2.5">
+                  {/* IMAGE */}
+
+                  <div className="relative h-[68px] w-[68px] shrink-0 overflow-hidden border border-orange-300/10">
+                    <img
+                      src={
+                        index === 0
+                          ? 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop'
+                          : index === 1
+                          ? 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop'
+                          : 'https://images.unsplash.com/photo-1522542550221-31fd19575a2d?q=80&w=1200&auto=format&fit=crop'
+                      }
+                      alt={project.name}
+                      className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                    />
+
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                  </div>
+
+                  {/* INFO */}
+
+                  <div className="min-w-0 flex-1">
+                    {/* TOP */}
+
+                    <div className="flex items-start justify-between gap-2">
+                      <div className="min-w-0">
+                        <h3 className="line-clamp-1 text-[13px] font-semibold text-white">
+                          {project.name}
+                        </h3>
+
+                        <p className="mt-1 line-clamp-1 text-[10px] text-zinc-400">
+                          {project.outcome}
+                        </p>
+                      </div>
+
+                      <div className="flex h-7 w-7 shrink-0 items-center justify-center border border-orange-300/10 bg-orange-400/[0.05] text-[11px] text-orange-100 transition duration-300 group-hover:translate-x-0.5">
+                        ↗
+                      </div>
+                    </div>
+
+                    {/* TECH */}
+
+                    <div className="mt-2 flex flex-wrap gap-1">
+                      {project.tech
+                        .split(',')
+                        .slice(0, 2)
+                        .map((item) => (
+                          <span
+                            key={item}
+                            className="border border-orange-300/10 bg-orange-400/[0.04] px-1.5 py-1 text-[8px] uppercase tracking-[0.12em] text-orange-100"
+                          >
+                            {item.trim()}
+                          </span>
+                        ))}
+                    </div>
+                  </div>
+                </div>
+              </article>
+            ))}
+          </div>
+          </section>
 
           {/* ========================= */}
           {/* My Experience + COURSES SECTION */}

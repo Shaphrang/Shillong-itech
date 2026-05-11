@@ -5,8 +5,10 @@ export type Project = {
   description: string;
   tech: string;
   outcome: string;
+  image: string;
 };
 
+//src/data/projects.ts
 export const projects: Project[] = [
   {
     slug: 'la-ki-trep-resort',
@@ -17,6 +19,7 @@ export const projects: Project[] = [
       'Next.js, Tailwind CSS, Supabase/PostgreSQL',
     outcome:
       'Improved booking visibility and smoother staff operations.',
+    image: '/projects/la-ki-trep.png',
   },
 
   {
@@ -28,6 +31,7 @@ export const projects: Project[] = [
       'Flutter, Hive, Supabase',
     outcome:
       'Faster field data collection with reliable sync workflow.',
+    image: '/projects/shine-app.png',
   },
 
   {
@@ -39,6 +43,7 @@ export const projects: Project[] = [
       'Next.js, PostgreSQL/Supabase, Tailwind CSS',
     outcome:
       'Centralized operations and easier compliance reporting.',
+    image: '/projects/lsc-dashboard.jpg',
   },
 
   {
@@ -50,5 +55,6 @@ export const projects: Project[] = [
       'Next.js, Flutter, Express.js, PostgreSQL/Supabase',
     outcome:
       'Unified discovery platform for local businesses and users.',
+    image: '/projects/myshillong.jpg',
   },
 ];
